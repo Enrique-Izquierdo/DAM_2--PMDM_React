@@ -1,5 +1,6 @@
 import React from "react";
 
+//Componente de clase "Cabecera"
 class Cabecera extends React.Component{
     render(){
         return (

@@ -1,9 +1,8 @@
 import React from 'react';
-import Cabecera from './components/cabecera';
-import Contenido from './components/contenido';
+import Cabecera from './cabecera';
+import Contenido from './contenido';
 
 //Componente de clase "Principal"
-
 class Principal extends React.Component {
     render(){
         return (
