@@ -5,3 +5,11 @@
     border-spacing: 20px;
     border: 4px solid black;
 }
+
+.encabezado {
+    width: 96%;
+    height: 300px;
+    background-color: greenyellow;
+    border-spacing: 300px;
+    border: 4px solid black;
+}
