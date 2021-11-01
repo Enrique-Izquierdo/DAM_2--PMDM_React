@@ -5,14 +5,22 @@ import "./index.css";
 // ReactDOM. La tercera línea de código importa el archivo index.css que hemos creado, 
 // para introducir los estilos de la aplicación.
 
-//Ejercicio 5
-class MiEnlace extends React.Component {
+
+//Ejercicio 6
+class MiImagen extends React.Component{
     render() {
-        return <nav><a href="https://es.wikipedia.org/wiki/India">India</a> </nav>;
+        return <img src="https://www.tourist-destinations.com/wp-content/uploads/2013/04/Hyderabad-India-2.jpg" alt="Foto de mercado nocturno en la India" width="748" height="457" title="Mercado en Hyderabad, India"/>;
     }
 }
 
-// Ejercicio 4
+// //Ejercicio 5
+// class MiEnlace extends React.Component {
+//     render() {
+//         return <nav><a href="https://es.wikipedia.org/wiki/India">India</a> </nav>;
+//     }
+// }
+
+// //Ejercicio 4
 // class MiComponente extends React.Component {
 //     render() {
 //         let titulo1;
@@ -35,7 +43,7 @@ class MiEnlace extends React.Component {
 
 //El componente se renderiza aquí:
 ReactDOM.render(
-    <MiEnlace />,
+    <MiImagen />,
     document.getElementById('root')
 );
 

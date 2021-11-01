@@ -1,6 +1,9 @@
 div {
     background-color: aquamarine;
-    width: 500px;
+    width: 1000px;
     margin: auto;
     text-align: center;
+}
+img {
+    position:relative;
 }
