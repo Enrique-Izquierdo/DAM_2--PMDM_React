@@ -7,7 +7,11 @@ import "./index.css";
 
 class MiComponente extends React.Component {
     render() {
-        return <h1>Hola mundo</h1>;
+        return (
+            <div>
+                <h1>Hola mundo</h1>
+                <p>Actividad realizada por Enrique Izquierdo.</p>
+            </div>);
     }
 }
 
