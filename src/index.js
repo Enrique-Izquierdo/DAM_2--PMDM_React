@@ -5,29 +5,37 @@ import "./index.css";
 // ReactDOM. La tercera línea de código importa el archivo index.css que hemos creado, 
 // para introducir los estilos de la aplicación.
 
-class MiComponente extends React.Component {
+//Ejercicio 5
+class MiEnlace extends React.Component {
     render() {
-        let titulo1;
-        do{
-            titulo1 = prompt("¿Que quiere introducir como título?");
-        }while(!isNaN(titulo1))
-
-        let parrafo1;
-        do{
-            parrafo1 = prompt("¿Que quiere introducir como párrafo?");
-        }while(!isNaN(parrafo1))
-
-        return (
-            <div>
-                <h1>{titulo1}</h1>
-                <p>{parrafo1}</p>
-            </div>);
+        return <nav><a href="https://es.wikipedia.org/wiki/India">India</a> </nav>;
     }
 }
 
+// Ejercicio 4
+// class MiComponente extends React.Component {
+//     render() {
+//         let titulo1;
+//         do{
+//             titulo1 = prompt("¿Que quiere introducir como título?");
+//         }while(!isNaN(titulo1))
+
+//         let parrafo1;
+//         do{
+//             parrafo1 = prompt("¿Que quiere introducir como párrafo?");
+//         }while(!isNaN(parrafo1))
+
+//         return (
+//             <div>
+//                 <h1>{titulo1}</h1>
+//                 <p>{parrafo1}</p>
+//             </div>);
+//     }
+// }
+
 //El componente se renderiza aquí:
 ReactDOM.render(
-    <MiComponente />,
+    <MiEnlace />,
     document.getElementById('root')
 );
 
