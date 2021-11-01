@@ -6,12 +6,51 @@ import "./index.css";
 // para introducir los estilos de la aplicación.
 
 
-//Ejercicio 6
-class MiImagen extends React.Component{
+//Ejercicio 7
+class Mifoto extends React.Component{    
     render() {
-        return <img src="https://www.tourist-destinations.com/wp-content/uploads/2013/04/Hyderabad-India-2.jpg" alt="Foto de mercado nocturno en la India" width="748" height="457" title="Mercado en Hyderabad, India"/>;
+        const foto1 = {
+            src: "https://cdn.wallpapersafari.com/15/34/2gpPSq.jpg",
+            alt: "Fotografía de una pradera al atardecer",
+            witdh: "500",
+            height: "500",
+            title: "Pradera al atardecer"
+        };
+        const foto2 = {
+            src: "https://www.pusselavenyn.se/cache/da/1200x1200-Castorland_600_060122.jpg",
+            alt: "Fotografía de una hoz del Cañón del Colorado",
+            witdh: "600",
+            height: "500",
+            title: "Cañon del Colorado"
+        };
+        const foto3 = {
+            src: "https://wc.wallpaperuse.com/wallp/4-40226_s.jpg",
+            alt: "Fotografía de un campo de colza con un molino de viento holandés",
+            witdh: "600",
+            height: "500",
+            title: "Molino de viento holandés"
+        };
+
+        const fotos = [foto1, foto2, foto3];
+        let posicion = Math.floor(Math.random()*3);
+        let picture = fotos[posicion];
+
+        return (
+            <div>
+                <p>{posicion}</p>
+                <img src={picture.src} alt={picture.alt} width={picture.witdh} height={picture.height} title={picture.title}/>
+            </div>        
+        );
     }
 }
+
+
+// //Ejercicio 6
+// class MiImagen extends React.Component{
+//     render() {
+//         return <img src="https://www.tourist-destinations.com/wp-content/uploads/2013/04/Hyderabad-India-2.jpg" alt="Foto de mercado nocturno en la India" width="748" height="457" title="Mercado en Hyderabad, India"/>;
+//     }
+// }
 
 // //Ejercicio 5
 // class MiEnlace extends React.Component {
@@ -43,7 +82,7 @@ class MiImagen extends React.Component{
 
 //El componente se renderiza aquí:
 ReactDOM.render(
-    <MiImagen />,
+    <Mifoto />,
     document.getElementById('root')
 );
 
