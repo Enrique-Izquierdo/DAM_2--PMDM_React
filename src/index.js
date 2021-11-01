@@ -7,8 +7,15 @@ import "./index.css";
 
 class MiComponente extends React.Component {
     render() {
-        const titulo1 = prompt("¿Que quiere introducir como título?");
-        const parrafo1 = prompt("¿Que quiere introducir como párrafo?");
+        let titulo1;
+        do{
+            titulo1 = prompt("¿Que quiere introducir como título?");
+        }while(!isNaN(titulo1))
+
+        let parrafo1;
+        do{
+            parrafo1 = prompt("¿Que quiere introducir como párrafo?");
+        }while(!isNaN(parrafo1))
 
         return (
             <div>
