@@ -7,13 +7,13 @@ import "./index.css";
 
 class MiComponente extends React.Component {
     render() {
-        const titulo1 ='¡¡Bienvenidos!!';
-        let parrafo1 = <p>¿Como ha ido el viaje?</p>;
+        const titulo1 = prompt("¿Que quiere introducir como título?");
+        const parrafo1 = prompt("¿Que quiere introducir como párrafo?");
 
         return (
             <div>
                 <h1>{titulo1}</h1>
-                {parrafo1}
+                <p>{parrafo1}</p>
             </div>);
     }
 }
