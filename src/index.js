@@ -7,10 +7,13 @@ import "./index.css";
 
 class MiComponente extends React.Component {
     render() {
+        const titulo1 ='¡¡Bienvenidos!!';
+        let parrafo1 = <p>¿Como ha ido el viaje?</p>;
+
         return (
             <div>
-                <h1>Hola mundo</h1>
-                <p>Actividad realizada por Enrique Izquierdo.</p>
+                <h1>{titulo1}</h1>
+                {parrafo1}
             </div>);
     }
 }
