@@ -1,17 +1,22 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
+import Principal from './components/principal';
+// Las dos primeras instrucciones importan las librerías React y ReactDOM. 
+// La tercera instrucción importa el archivo index.css que hemos creado, 
+// para introducir los estilos de la aplicación.
 
-ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
-  document.getElementById('root')
-);
+//Creamos el componente de clase Index
+class Index extends React.Component {
+    render(){
+        return <Principal/>;
+    }
+}
 
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();
+//El componente se renderiza aquí
+ReactDOM.render(<Index/>, document.getElementById('root'));
+// El codigo devuelto por "return" es renderizado por el método render() 
+// de la librería ReactDOM. Al renderizar el componente de clase "Index", 
+// instanciamos un objeto de la clase Index -<Index />-, y lo renderizamos 
+// en el punto de entrada de la aplicación -seleccionando el elemento del 
+// archivo .html con una id “root”-.
