@@ -6,14 +6,15 @@ import Principal from './components/principal';
 // La tercera instrucción importa el archivo index.css que hemos creado, 
 // para introducir los estilos de la aplicación.
 
-//Creamos el componente de clase Index
+// Creamos el componente de clase Index que al ser renderizado, instancia
+// al componente de clase Principal
 class Index extends React.Component {
     render(){
         return <Principal/>;
     }
 }
 
-//El componente se renderiza aquí
+// El componente se renderiza aquí
 ReactDOM.render(<Index/>, document.getElementById('root'));
 // El codigo devuelto por "return" es renderizado por el método render() 
 // de la librería ReactDOM. Al renderizar el componente de clase "Index", 
