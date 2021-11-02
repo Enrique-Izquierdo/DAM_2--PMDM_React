@@ -1,3 +1,34 @@
-.cabecera {
-    background-image: url('https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.europarl.europa.eu%2Fnews%2Fes%2Fheadlines%2Fworld%2F20210408STO01627%2Fue-india-impulsar-la-cooperacion-en-areas-como-el-comercio-y-el-clima&psig=AOvVaw1IrauFMiCped_l27WfO3_6&ust=1635936173477000&source=images&cd=vfe&ved=0CAsQjRxqFwoTCKDsvcG_-fMCFQAAAAAdAAAAABAD');
+.stCabecera {
+    text-align: center;
+    padding: 20px 0;
+    font-weight: bold;
+    background-color: goldenrod;
+    /*height: 80px;*/
+    background-image: url('./components/img/india1.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+.stMenu {
+    width: 20%;
+    height: 60%;
+    background-color: rgb(113, 241, 241);
+}
+
+.stTitulo {
+    width: 80%;
+    height: 60%;
+    background-color:rgb(163, 236, 115);
+}
+
+.stContenido {
+    width: 80%;
+    height: 60%;
+    background-color: rgb(243, 125, 125);
+}
+
+.stFooter {    
+    height: 10%;
+    background-color: rgb(240, 240, 101);
 }

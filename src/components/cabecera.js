@@ -4,7 +4,7 @@ import React from "react";
 class Cabecera extends React.Component {
     render(){
         return (
-            <div class='cabecera'>
+            <div class='stCabecera'>
                 <h1>India, Tierra de Contrastes</h1>                
             </div>
         );
