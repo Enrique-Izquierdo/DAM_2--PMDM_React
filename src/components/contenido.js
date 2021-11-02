@@ -4,9 +4,9 @@ import React from "react";
 class Contenido extends React.Component {
     render() {
         return (
-            <div class='stContenido'>
+            <main class='stContenido'>
                 <p>Contenido</p>
-            </div>
+            </main>
         );
     }
 }

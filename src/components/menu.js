@@ -4,8 +4,15 @@ import React from 'react';
 class Menu extends React.Component {
     render() {
         return (
-            <div class='stMenu'>
-                <p>Menú</p>
+            <div>
+                <img src='' alt='' width='' height='' title=''></img>
+                <table>
+                    <tr><th>Menú</th></tr>
+                    <tr><td></td></tr>
+                    <tr><td></td></tr>
+                    <tr><td></td></tr>
+                    <tr><td></td></tr>                    
+                </table>                
             </div>        
         );
     }

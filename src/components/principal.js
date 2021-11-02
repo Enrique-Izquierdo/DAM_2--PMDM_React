@@ -8,11 +8,11 @@ import Footer from './footer';
 class Principal extends React.Component {
     render(){
         return (
-            <div>
+            <body>                
                 <Cabecera/>
                 <Seccion/>
                 <Footer/>
-            </div>
+            </body>
         );
     }
 }
