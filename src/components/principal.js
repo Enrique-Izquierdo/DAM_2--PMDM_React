@@ -12,8 +12,7 @@ class Principal extends React.Component{
         return (
             <body>
                 <Cabecera/>
-                <Contenido titulo='Esto es un título' parrafo1='Esto es el parrafo 1' 
-                    parrafo2='Esto es el parrafo 2'/>
+                <Contenido/>
             </body>
         );
     }

@@ -15,9 +15,9 @@ class Contenido extends React.Component{
     render(){
         return (
             <header className='stContenido'>
-                <h2>{this.props.titulo}</h2>
-                <p>{this.props.parrafo1}</p>
-                <p>{this.props.parrafo2}</p>
+                <h2>{this.state.titulo}</h2>
+                <p>{this.state.parrafo1}</p>
+                <p>{this.state.parrafo2}</p>
             </header>
         );
     }
