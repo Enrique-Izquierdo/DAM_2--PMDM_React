@@ -4,7 +4,7 @@ import React from "react";
 class Titulo extends React.Component {
     render() {        
         return (            
-            <h1 class='stTitulo'>Tradiciones y costumbres de la India</h1>            
+            <h1 className='stTitulo'>Tradiciones y costumbres de la India</h1>            
         );
     }
 }

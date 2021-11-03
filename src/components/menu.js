@@ -8,7 +8,7 @@ class Menu extends React.Component {
                 <img src={require('./img/india_bandera.jpg').default} alt='Foto de la bandera de la India' width='100%' height='100%' title='Bandera de la India'/>
                 <nav>
                     <table>
-                        <tr><th><h3 class='stH4'>Enlaces de interés:</h3></th></tr>
+                        <tr><th><h3 className='stH4'>Enlaces de interés:</h3></th></tr>
                         <tr>                                                      
                             <ul>
                                 <li><a href="https://www.lasociedadgeografica.com/blog/viajes-india/tradiciones-curiosas-de-la-india/">Tradiciones curiosas de la India</a></li>

@@ -8,11 +8,11 @@ import Contenido from './contenido';
 class Seccion extends React.Component{
     render() {
         return (
-            <section class='stSeccionCompleta'>
-                <section class='stSeccionIzquierda'>
+            <section className='stSeccionCompleta'>
+                <section className='stSeccionIzquierda'>
                     <Menu/>
                 </section>                    
-                <section class='stSeccionDerecha'>
+                <section className='stSeccionDerecha'>
                     <Titulo/>
                     <Contenido/>
                 </section>                
