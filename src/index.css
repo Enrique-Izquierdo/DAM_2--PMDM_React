@@ -1,16 +1,17 @@
 .stCabecera {
     text-align: center;
     background-color: aquamarine;
-    width: 100%;
+    width: 98%;
     height: 20%;    
     padding: 0.01% 0;
     border: 1px solid black;
-    margin-bottom: 1%;
+    margin: 1%;
 }
 
 .stContenido {
     float: left;    
     text-align: center;
-    width: 33%;    
+    width: 31.2%;        
     border: 1px solid black;
+    margin: 1%;
 }
