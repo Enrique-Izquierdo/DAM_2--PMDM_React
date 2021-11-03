@@ -30,7 +30,8 @@
 }
 
 .stTitulo {
-    padding:20px 20px;       
+    font-size:175%;
+    padding:15px 15px;       
     background-color:rgb(163, 236, 115);
     text-align: center;
     margin-top: 0%;
