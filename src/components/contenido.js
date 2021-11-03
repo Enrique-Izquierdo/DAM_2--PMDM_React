@@ -5,8 +5,10 @@ import React from "react";
 class Contenido extends React.Component{
     render(){
         return (
-            <main>
-                <p>Este es el contenido</p>
+            <main className='stContenido'>
+                <h2>{this.props.titulo}</h2>
+                <p>{this.props.parrafo1}</p>
+                <p>{this.props.parrafo2}</p>
             </main>
         );
     }
