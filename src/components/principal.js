@@ -10,13 +10,13 @@ import Contenido from './contenido';
 class Principal extends React.Component{
     render(){
         return (
-            <body>
-                <Cabecera/>
+            <body>                
                 <Contenido titulo='Contenido 1' parrafo1='Parrafo 1A' parrafo2='Parrafo 1B'/>
                 <Contenido titulo='Contenido 2' 
                     parrafo1={<img src={require('./img/paisaje.jpg').default} alt='paisaje' width='100%'/>} 
                     parrafo2='Parrafo 2B'/>
                 <Contenido titulo='Contenido 3' parrafo1='Parrafo 3A' parrafo2='Parrafo 3B'/>
+                <Cabecera/>
             </body>
         );
     }
