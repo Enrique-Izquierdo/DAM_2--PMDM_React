@@ -1,17 +1,23 @@
 import React from "react";
+import ReactPlayer from "react-player";
 
 //Creamos el componente de clase: Contenido
 class Contenido extends React.Component {
     render() {
         return (
             <main className='stContenido'>
-                <p>La India es el segundo país del mundo con más habitantes después de China. 
+
+                <p><b>La India es el segundo país del mundo con más habitantes después de China. 
                     De los 1,3 millones de habitantes de la India, más del 80 % son hindúes. 
                     Por lo tanto, no es de extrañar que esta religión haya tenido una gran influencia 
                     en la cultura actual de la India. En este artículo puede leer más información 
-                    sobre algunos rituales hindúes y otras costumbres en la India.</p>
+                    sobre algunos rituales hindúes y otras costumbres en la India.</b></p>
+                <div className='stVideo'>
+                    <ReactPlayer url="https://www.youtube.com/watch?v=anudUjqTKpQ" controls='true' 
+                        width='497px' height='280px' />
+                </div>
                 <h4 className='stH4'>Religiones</h4>
-                <p>La India tiene una gran variedad de religiones, culturas y grupos de población. 
+                <p >La India tiene una gran variedad de religiones, culturas y grupos de población. 
                     El hinduismo (83 %), el sijismo (2 %) y el budismo (1 %) tienen su origen en 
                     la India. En el país también viven musulmanes (11 %) y cristianos (2 %). Los 
                     hindúes constituyen, con mucho, la mayor parte de la población y el hinduismo 
@@ -36,6 +42,7 @@ class Contenido extends React.Component {
                     símbolos de la lucha india por la libertad y la independencia. Además, el tejido tiene un 
                     efecto refrescante en verano. La tela no solo se utiliza para hacer kurtas, sino también para 
                     otras prendas como el dhoti.</p>
+
             </main>
         );
     }

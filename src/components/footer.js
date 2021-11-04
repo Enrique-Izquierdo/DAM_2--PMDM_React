@@ -5,7 +5,7 @@ class Footer extends React.Component{
     render() {
         return (
             <footer className='stFooter'>
-                <p>alumno: Enrique Izquierdo Jiménez, 2ºDAM presencial</p>
+                <p>alumno: <b>Enrique Izquierdo Jiménez</b>, 2ºDAM presencial</p>
             </footer>
         );
     }

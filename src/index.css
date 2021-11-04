@@ -44,6 +44,11 @@
     text-align: justify;
 }
 
+.stVideo {
+    float: right;
+    padding-left: 2.1%;
+}
+
 .stH4 {
     margin-bottom: -11px;
 }
