@@ -6,7 +6,7 @@ import React from 'react';
 // tiene un método render que devuelve...
 class Contenido extends React.Component {
     render() {
-        return ;
+        return <p></p>;
     }
 }
 

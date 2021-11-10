@@ -5,7 +5,7 @@ import React from 'react';
 // que contiene un método render() que devuelve..
 class Cabecera extends React.Component{
     render(){
-        return ;
+        return <p></p>;
     }
 }
 //Exportamos por defecto el componente de clase "Cabecera"

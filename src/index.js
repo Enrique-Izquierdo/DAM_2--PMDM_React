@@ -4,7 +4,7 @@ import React from "react";
 import ReactDOM from "react-dom";
 // Importamos el componente de clase Principal del archivo 'principal.js',
 // ubicado en la dirección relativa ./components/principal.js
-import Principal from 'componentes/principal.js';
+import Principal from './components/principal.js';
 
 // Creamos el componente de clase "Index" que hereda de la clase "React", y
 // que contiene el método render() que devuelve el componente de clase "Principal"
