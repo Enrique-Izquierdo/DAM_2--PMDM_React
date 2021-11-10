@@ -3,7 +3,7 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import Principal from './components/principal';
 // Las dos primeras instrucciones importan las librerías React y ReactDOM. 
-// La tercera instrucción importa el archivo index.css que hemos creado, 
+// La tercera instrucción importa el archivo index.css que hemos creado 
 // para introducir los estilos de la aplicación.
 
 // Creamos el componente de clase Index que al ser renderizado, instancia

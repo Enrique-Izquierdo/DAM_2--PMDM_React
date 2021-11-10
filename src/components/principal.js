@@ -3,7 +3,7 @@ import Cabecera from './cabecera';
 import Seccion from './seccion';
 import Footer from './footer';
 
-// Creamos el componente de clase Seccion que devuelve las instancias
+// Creamos el componente de clase Principal que devuelve las instancias
 // de los componentes de clase Cabecera, Seccion y Footer.
 class Principal extends React.Component {
     render(){
