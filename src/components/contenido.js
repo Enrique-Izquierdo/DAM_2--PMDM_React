@@ -6,9 +6,16 @@ import React from 'react';
 // tiene un método render que devuelve...
 class Contenido extends React.Component {
     render() {
-        return <p></p>;
+        return (
+            <header className='stCabecera'>
+                <h1>Actividades: Eventos React</h1>
+
+            </header>
+        );
     }
 }
+
+
 
 // Exportamos por defecto el contenido de clase "Contenido"
 export default Contenido;
