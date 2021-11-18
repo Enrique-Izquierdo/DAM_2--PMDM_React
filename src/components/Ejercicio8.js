@@ -28,10 +28,9 @@ class Contenido extends React.Component {
       return (
         <div className="pagina">
           <h1>{this.state.titulo}</h1>
-          <img onMouseOver={this.handleMouseOver} onMouseOut={this.handleMouseOut} src={this.state.imagen} alt="imagen" width="75%" height="75%"></img>
-          
-              </div>
-        )
+          <img onMouseOver={this.handleMouseOver} onMouseOut={this.handleMouseOut} src={this.state.imagen} alt="imagen" width="75%" height="75%"></img>          
+        </div>
+      )
     }
   }
   

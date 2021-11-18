@@ -30,7 +30,7 @@ class Contenido extends React.Component {
           <h1>{this.state.titulo}</h1>        
           <div id="caja1" onMouseOver={this.handleMouseOver} onMouseOut={this.handleMouseOut}></div>
         </div>
-        )
+      )
     }
   }
   
