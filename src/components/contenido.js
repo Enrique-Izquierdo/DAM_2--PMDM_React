@@ -9,14 +9,27 @@ class Contenido extends React.Component{
             parrafo2: "La serie ya había sido descrita anteriormente por matemáticos hindúes como Gopala y Hemachandra y hoy en día es muy conocida en el mundo matemático, donde se la conoce por sucesión, serie o espiral de Fibonacci.",
             parrafo3: "La espiral aparece constantemente en la naturaleza. La podemos observar por ejemplo en las escamas de una piña, en las flores de la alcachofa o del girasol. También en la forma de una concha marina, en huracanes y algunas galaxias.",
         };
+        this.handleOver = this.handleOver.bind(this);
+        this.handleOut = this.handleOut.bind(this);
     }
+
+    handleOver(event){
+        event.preventDefault();
+        event.target.style.color="red";
+    }
+
+    handleOut(event){
+        event.preventDefault();
+        event.target.style.color="black";
+    }
+
     render(){
         return(
             <article>                
                 <p className='imagen'/>
-                <p>{this.state.parrafo1}</p>
-                <p>{this.state.parrafo2}</p>
-                <p>{this.state.parrafo3}</p>
+                <p onMouseOver={this.handleOver} onMouseOut={this.handleOut}>{this.state.parrafo1}</p>
+                <p onMouseOver={this.handleOver} onMouseOut={this.handleOut}>{this.state.parrafo2}</p>
+                <p onMouseOver={this.handleOver} onMouseOut={this.handleOut}>{this.state.parrafo3}</p>
             </article>
         );
     }
