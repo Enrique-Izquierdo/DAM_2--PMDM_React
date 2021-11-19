@@ -11,6 +11,7 @@ class Contenido extends React.Component{
         };
         this.handleOver = this.handleOver.bind(this);
         this.handleOut = this.handleOut.bind(this);
+        this.handleClick = this.handleClick.bind(this);
     }
 
     handleOver(event){
@@ -23,10 +24,15 @@ class Contenido extends React.Component{
         event.target.style.color="black";
     }
 
+    handleClick(event){
+        event.preventDefault();
+        event.target.style.background="url('https://matemelga.files.wordpress.com/2019/02/espiralfibonacci.jpg') no-repeat";
+    }
+
     render(){
         return(
             <article>                
-                <p className='imagen'/>
+                <p className='imagen' onClick={this.handleClick}/>
                 <p onMouseOver={this.handleOver} onMouseOut={this.handleOut}>{this.state.parrafo1}</p>
                 <p onMouseOver={this.handleOver} onMouseOut={this.handleOut}>{this.state.parrafo2}</p>
                 <p onMouseOver={this.handleOver} onMouseOut={this.handleOut}>{this.state.parrafo3}</p>
