@@ -32,7 +32,7 @@ class Contenido extends React.Component{
     render(){
         return(
             <article>                
-                <p className='imagen' onClick={this.handleClick}/>
+                <div className='imagen' onClick={this.handleClick}/>
                 <p onMouseOver={this.handleOver} onMouseOut={this.handleOut}>{this.state.parrafo1}</p>
                 <p onMouseOver={this.handleOver} onMouseOut={this.handleOut}>{this.state.parrafo2}</p>
                 <p onMouseOver={this.handleOver} onMouseOut={this.handleOut}>{this.state.parrafo3}</p>
