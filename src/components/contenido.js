@@ -5,6 +5,7 @@ class Contenido extends React.Component {
   componentWillUnmount(){
     alert("componentWillUnmount");
   }
+  
   render() {
     return (
       <div>

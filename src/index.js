@@ -17,14 +17,14 @@ class Index extends React.Component {
     this.setState({mostrar:!this.state.mostrar})
   }
 
-render() {
-  return (
-    <div>
-      <h1 onClick={this.handleClick}>Componente Index</h1>
-        {this.state.mostrar ? <Contenido/> : null}
-    </div>
-  )
-}
+  render() {
+    return (
+      <div>
+        <h1 onClick={this.handleClick}>Componente Index</h1>
+          {this.state.mostrar ? <Contenido/> : null}
+      </div>
+    )
+  }
 }
 
 
