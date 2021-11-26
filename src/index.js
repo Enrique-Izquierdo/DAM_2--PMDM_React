@@ -11,6 +11,7 @@ class Index extends React.Component {
       };
       this.handleClick = this.handleClick.bind(this);
     }
+
     componentDidMount(){
       setTimeout(() => {
         document.getElementById("titulo").innerHTML="componentDidMount()";
@@ -20,7 +21,7 @@ class Index extends React.Component {
     handleClick(event){
       event.preventDefault();
       this.setState({titulo: "Actualización: cambiamos componente con el Evento"});
-      document.getElementById("titulo").innerHTML="componentDidMount()";
+      //document.getElementById("titulo").innerHTML="componentDidMount()";   //js plano
     }
 
     componentDidUpdate(prevState){
@@ -40,7 +41,7 @@ class Index extends React.Component {
         </main>
         )
     }
-  }
+}
   
 
 ReactDOM.render(
