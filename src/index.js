@@ -4,41 +4,39 @@ import "./index.css";
 
 
 class Index extends React.Component {
-    constructor(props){
-      super(props);
-      this.state={
-        titulo: "constructor() + render()",
-      };
-      this.handleClick = this.handleClick.bind(this);
-    }
-    componentDidMount(){
-      setTimeout(() => {
-        document.getElementById("titulo").innerHTML="componentDidMount()";
-      }, 4000);
-    }
-  
-    handleClick(event){
-      event.preventDefault();
-      this.setState({titulo: "Actualización: cambiamos componente con el Evento"});
-      document.getElementById("titulo").innerHTML="componentDidMount()";
-    }
-
-    componentDidUpdate(prevState){
-        if(prevState.titulo !== this.state.titulo){
-          setInterval(() => {
-            this.setState({titulo: "componentDidUpdate()"});
-          }, 6000);
-        }
-    }
-    
-
     render() {
       return (
-        <main>
-          <img src="https://res.cloudinary.com/practicaldev/image/fetch/s--BZEJQLnh--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_auto%2Cw_880/https://dev-to-uploads.s3.amazonaws.com/i/u9oj57ygu7tw0ivpqrzy.jpg" alt="imagen"/>
-          <h1 id="titulo" onClick={this.handleClick}>{this.state.titulo}</h1>
-        </main>
-        )
+        <div>
+          <header>
+            <p>Hola</p>        
+          </header>
+          <div className='contInicial'></div>
+          <main>            
+            <article>
+              <h1>La Ciudad de las Artes y las Ciencias</h1>
+              <p>Ubicada al final del viejo cauce del río Turia, la Ciudad de las Artes y las Ciencias es un complejo arquitectónico, cultural y de entretenimiento diseñado por Santiago Calatrava y Félix Candela, junto con los ingenieros autores del diseño estructural de las cubiertas del L'Oceanografic Alberto Domingo y Carlos Lázaro.</p>
+            </article>
+            
+            <aside>
+              <h2>Edificios</h2>
+              <nav>
+                <ul>
+                  <li><a href="#" class="menulink">Hemisferic</a></li>
+                  <li><a href="#" class="menulink">Museo de las Ciencias</a></li>
+                  <li><a href="#" class="menulink">Oceanografic</a></li>
+                  <li><a href="#" class="menulink">Palau de les Arts</a></li>
+                  <li><a href="#" class="menulink">Umbracle</a></li>
+                </ul>
+              </nav>
+            </aside>
+            
+          </main>
+          <div className='contFinal'></div>
+          <footer>
+            <p>Adios</p>
+          </footer>        
+        </div>
+      )
     }
   }
   
