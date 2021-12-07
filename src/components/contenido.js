@@ -8,7 +8,8 @@ class Contenido extends React.Component {
     constructor(props){
         super(props);
         this.state = {
-            titulo: "Actividades: Eventos React",
+            titulo: "Unidad 3, Actividad 5 - Eventos en React, Ejercicio 6",
+            imagen: ["./imagenes/MachuPicchu.jfif", "./imagenes/quechuas.jfif", "./imagenes/Titicaca.jfif"],
             texto1: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Consectetur lorem donec massa sapien faucibus et. Eros in cursus turpis massa tincidunt dui ut. Id diam maecenas ultricies mi. Dignissim diam quis enim lobortis scelerisque. Eu volutpat odio facilisis mauris sit. Aenean vel elit scelerisque mauris pellentesque pulvinar pellentesque habitant. Quis risus sed vulputate odio ut enim blandit. Nunc mattis enim ut tellus elementum sagittis vitae et. Amet luctus venenatis lectus magna fringilla urna. Ultricies integer quis auctor elit sed vulputate. Eleifend quam adipiscing vitae proin sagittis nisl rhoncus mattis. Integer eget aliquet nibh praesent tristique magna sit amet purus. Urna neque viverra justo nec ultrices. Aliquet nibh praesent tristique magna.",
             texto2: "Eros in cursus turpis massa tincidunt dui ut. Id diam maecenas ultricies mi. Dignissim diam quis enim lobortis scelerisque. Eu volutpat odio facilisis mauris sit.",
             texto3: "Aenean vel elit scelerisque mauris pellentesque pulvinar pellentesque habitant. Quis risus sed vulputate odio ut enim blandit. Nunc mattis enim ut tellus elementum sagittis vitae et.",
@@ -73,7 +74,10 @@ class Contenido extends React.Component {
     render() {
         return (
             <div className='stDiv'>
-                <h1 onClick={this.handleClick}>{this.state.titulo}</h1>                
+                <h1 onClick={this.handleClick}>{this.state.titulo}</h1>
+                <img src={require("./imagenes/MachuPicchu.jfif").default} alt="Machu Picchu"/><br/>
+                <input type="button" onClick={this.verImagenAnterior} value="Ver anterior"/> 
+                <input type="button" onClick={this.verImagenSiguiente} value="Ver siguiente"/>
                 <p id="1" onClick={this.cambiarEstilo} onMouseOver={this.handleOver} onMouseOut={this.handleOut}>{this.state.texto1}</p>
                 <p id="2" onClick={this.cambiarTexto} onMouseOver={this.handleOver} onMouseOut={this.handleOut}>{this.state.texto2}</p>
                 <p id="3" onClick={this.cambiarTexto} onMouseOver={this.handleOver} onMouseOut={this.handleOut}>{this.state.texto3}</p>
