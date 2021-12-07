@@ -17,10 +17,7 @@ class Contenido extends React.Component {
         };
         this.handleClick = this.handleClick.bind(this);
         this.cambiarEstilo = this.cambiarEstilo.bind(this);
-        this.cambiarTexto2 = this.cambiarTexto2.bind(this);
-        this.cambiarTexto3 = this.cambiarTexto3.bind(this);
-        this.cambiarTexto4 = this.cambiarTexto4.bind(this);
-        this.cambiarTexto5 = this.cambiarTexto5.bind(this)
+        this.cambiarTexto = this.cambiarTexto.bind(this)
     }
 
     handleClick(event){
@@ -33,31 +30,29 @@ class Contenido extends React.Component {
         this.state.texto1.length<300 ? event.target.style.fontSize = "30px" : event.target.style.textDecoration = "underline";
     }
 
-    cambiarTexto2(){
-        this.setState({ texto2: ""});
+    cambiarTexto(event){
+        let numId = event.target.id;
+        if(numId=="2"){
+            this.setState({ texto2: "" });
+        } else if(numId=="3"){
+            this.setState({ texto3: "" });
+        } else if(numId=="4"){
+            this.setState({ texto4: "" });
+        } else if(numId=="5"){
+            this.setState({ texto5: "" });
+        }
     }
 
-    cambiarTexto3(){
-        this.setState({ texto3: ""});
-    }
-
-    cambiarTexto4(){
-        this.setState({ texto4: ""});
-    }
-
-    cambiarTexto5(){
-        this.setState({ texto5: ""});
-    }
 
     render() {
         return (
             <div className='stDiv'>
                 <h1 onClick={this.handleClick}>{this.state.titulo}</h1>                
-                <p onClick={this.cambiarEstilo}>{this.state.texto1}</p>
-                <p onClick={this.cambiarTexto2}>{this.state.texto2}</p>
-                <p onClick={this.cambiarTexto3}>{this.state.texto3}</p>
-                <p onClick={this.cambiarTexto4}>{this.state.texto4}</p>
-                <p onClick={this.cambiarTexto5}>{this.state.texto5}</p>
+                <p id="1" onClick={this.cambiarEstilo}>{this.state.texto1}</p>
+                <p id="2" onClick={this.cambiarTexto}>{this.state.texto2}</p>
+                <p id="3" onClick={this.cambiarTexto}>{this.state.texto3}</p>
+                <p id="4" onClick={this.cambiarTexto}>{this.state.texto4}</p>
+                <p id="5" onClick={this.cambiarTexto}>{this.state.texto5}</p>
             </div>
         );
     }
