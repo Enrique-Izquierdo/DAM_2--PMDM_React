@@ -9,7 +9,8 @@ class Contenido extends React.Component {
         super(props);
         this.state = {
             titulo: "Unidad 3, Actividad 5 - Eventos en React, Ejercicio 6",
-            imagen: ["./imagenes/MachuPicchu.jfif", "./imagenes/quechuas.jfif", "./imagenes/Titicaca.jfif"],
+            imagenes: ["https://www.preferente.com/wp-content/uploads/2020/03/Peru-Machupichu.jpg", "https://www.peruhop.com/wp-content/uploads/cosas-por-hacer-en-peru-andes-huaraz.jpg", "https://www.peruhop.com/wp-content/uploads/cosas-por-hacer-en-peru-selva.jpg"],
+            numImagen: 0,
             texto1: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Consectetur lorem donec massa sapien faucibus et. Eros in cursus turpis massa tincidunt dui ut. Id diam maecenas ultricies mi. Dignissim diam quis enim lobortis scelerisque. Eu volutpat odio facilisis mauris sit. Aenean vel elit scelerisque mauris pellentesque pulvinar pellentesque habitant. Quis risus sed vulputate odio ut enim blandit. Nunc mattis enim ut tellus elementum sagittis vitae et. Amet luctus venenatis lectus magna fringilla urna. Ultricies integer quis auctor elit sed vulputate. Eleifend quam adipiscing vitae proin sagittis nisl rhoncus mattis. Integer eget aliquet nibh praesent tristique magna sit amet purus. Urna neque viverra justo nec ultrices. Aliquet nibh praesent tristique magna.",
             texto2: "Eros in cursus turpis massa tincidunt dui ut. Id diam maecenas ultricies mi. Dignissim diam quis enim lobortis scelerisque. Eu volutpat odio facilisis mauris sit.",
             texto3: "Aenean vel elit scelerisque mauris pellentesque pulvinar pellentesque habitant. Quis risus sed vulputate odio ut enim blandit. Nunc mattis enim ut tellus elementum sagittis vitae et.",
@@ -17,6 +18,8 @@ class Contenido extends React.Component {
             texto5: "Integer eget aliquet nibh praesent tristique magna sit amet purus. Urna neque viverra justo nec ultrices. Aliquet nibh praesent tristique magna."
         };
         this.handleClick = this.handleClick.bind(this);
+        this.verImagenAnterior = this.verImagenAnterior.bind(this);
+        this.verImagenSiguiente = this.verImagenSiguiente.bind(this);
         this.cambiarEstilo = this.cambiarEstilo.bind(this);
         this.cambiarTexto = this.cambiarTexto.bind(this);
         this.handleOver = this.handleOver.bind(this)
@@ -29,9 +32,20 @@ class Contenido extends React.Component {
         event.target.style.backgroundColor="black";
     }
 
+    verImagenAnterior(){
+        this.state.numImagen>0 ? this.setState({ numImagen: this.state.numImagen-1 }) : this.setState({ numImagen: this.state.imagenes.length-1 })
+    }
+
+    verImagenSiguiente(){
+        if (this.state.numImagen < this.state.imagenes.length-1) {
+            this.setState({ numImagen: this.state.numImagen+1 });
+        } else {
+            this.setState({ numImagen: 0 });
+        }        
+    }
+
     cambiarEstilo(event){  
         this.state.texto1.length<300 ? event.target.style.fontSize = "30px" : event.target.style.textDecoration = "underline";
-
         // if(this.state.texto1.length<300){
         //     event.target.style.fontSize = "30px";
         // } else {
@@ -70,14 +84,14 @@ class Contenido extends React.Component {
     handleOut(event){
         event.target.style.backgroundColor="white";
     }
-
+    
     render() {
         return (
             <div className='stDiv'>
                 <h1 onClick={this.handleClick}>{this.state.titulo}</h1>
-                <img src={require("./imagenes/MachuPicchu.jfif").default} alt="Machu Picchu"/><br/>
-                <input type="button" onClick={this.verImagenAnterior} value="Ver anterior"/> 
-                <input type="button" onClick={this.verImagenSiguiente} value="Ver siguiente"/>
+                <img src={this.state.imagenes[this.state.numImagen]} alt="" width="100%"/><br/>
+                <button onClick={this.verImagenAnterior}>Ver anterior</button>
+                <button onClick={this.verImagenSiguiente}>Ver siguiente</button>
                 <p id="1" onClick={this.cambiarEstilo} onMouseOver={this.handleOver} onMouseOut={this.handleOut}>{this.state.texto1}</p>
                 <p id="2" onClick={this.cambiarTexto} onMouseOver={this.handleOver} onMouseOut={this.handleOut}>{this.state.texto2}</p>
                 <p id="3" onClick={this.cambiarTexto} onMouseOver={this.handleOver} onMouseOut={this.handleOut}>{this.state.texto3}</p>
