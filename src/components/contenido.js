@@ -38,12 +38,14 @@ class Contenido extends React.Component {
         event.target.style.backgroundColor="black";
     }
 
-    ocultarImagen(event){
+    ocultarImagen(event){        
         event.target.style.opacity="0.0";
+        event.target.style.transition="3s";
     }
 
     verImagen(event){
-        event.target.style.opacity="0.2";
+        event.target.style.opacity="0.2";        
+        event.target.style.transition="3s";
     }
 
 
