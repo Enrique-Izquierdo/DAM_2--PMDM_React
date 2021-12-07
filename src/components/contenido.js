@@ -20,6 +20,8 @@ class Contenido extends React.Component {
             texto5: "Integer eget aliquet nibh praesent tristique magna sit amet purus. Urna neque viverra justo nec ultrices. Aliquet nibh praesent tristique magna."
         };
         this.handleClick = this.handleClick.bind(this);
+        this.ocultarImagen = this.ocultarImagen.bind(this);
+        this.verImagen = this.verImagen.bind(this);
         this.verImagenAnterior = this.verImagenAnterior.bind(this);
         this.verImagenSiguiente = this.verImagenSiguiente.bind(this);
         this.agrandarImagen = this.agrandarImagen.bind(this);
@@ -35,6 +37,15 @@ class Contenido extends React.Component {
         event.target.style.color="red";
         event.target.style.backgroundColor="black";
     }
+
+    ocultarImagen(event){
+        event.target.style.opacity="0.0";
+    }
+
+    verImagen(event){
+        event.target.style.opacity="0.2";
+    }
+
 
     verImagenAnterior(){
         this.state.numImagen>0 ? this.setState({ numImagen: this.state.numImagen-1 }) : this.setState({ numImagen: this.state.imagenes.length-1 })
@@ -107,10 +118,15 @@ class Contenido extends React.Component {
         return (
             <div className='stDiv'>
                 <h1 onClick={this.handleClick}>{this.state.titulo}</h1>
+                
+                <h2>Ejercicio 8</h2>
+                <p><img onMouseOver={this.ocultarImagen} onMouseOut={this.verImagen} style={{opacity: 1}} src={this.state.imagenes[0]} alt="" width="75%"/></p><br/>
+                
                 <h2>Ejercicios 6 y 7</h2>
                 <img onMouseOver={this.agrandarImagen} onMouseOut={this.reducirImagen} src={this.state.imagenes[this.state.numImagen]} alt="" width={this.state.ancho} height={this.state.alto}/><br/>
                 <button onClick={this.verImagenAnterior}>Ver anterior</button>
                 <button onClick={this.verImagenSiguiente}>Ver siguiente</button><br/><br/>
+               
                 <h2>Ejercicios del 1 al 5</h2>
                 <p id="1" onClick={this.cambiarEstilo} onMouseOver={this.handleOver} onMouseOut={this.handleOut}>{this.state.texto1}</p>
                 <p id="2" onClick={this.cambiarTexto} onMouseOver={this.handleOver} onMouseOut={this.handleOut}>{this.state.texto2}</p>
