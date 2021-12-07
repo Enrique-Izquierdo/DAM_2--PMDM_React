@@ -8,9 +8,9 @@ class Index extends React.Component {
       return (
         <div>
           <header>
-            <p>Hola</p>        
+            <div class='contInicial'></div>        
           </header>
-          {/* <div className='contInicial'></div> */}
+          {/*  */}
           <main>            
             <article>
               <h1>La Ciudad de las Artes y las Ciencias</h1>
@@ -31,9 +31,9 @@ class Index extends React.Component {
             </aside>
             
           </main>
-          {/* <div className='contFinal'></div> */}
+          {/*  */}
           <footer>
-            <p>Adios</p>
+            <div className='contFinal'></div>
           </footer>        
         </div>
       )
