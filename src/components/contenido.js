@@ -28,6 +28,12 @@ class Contenido extends React.Component {
 
     cambiarEstilo(event){  
         this.state.texto1.length<300 ? event.target.style.fontSize = "30px" : event.target.style.textDecoration = "underline";
+
+        // if(this.state.texto1.length<300){
+        //     event.target.style.fontSize = "30px";
+        // } else {
+        //     event.target.style.textDecoration = "underline";
+        // }
     }
 
     cambiarTexto(event){
