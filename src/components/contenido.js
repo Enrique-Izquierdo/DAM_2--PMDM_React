@@ -18,8 +18,8 @@ class Contenido extends React.Component {
         this.handleClick = this.handleClick.bind(this);
         this.cambiarEstilo = this.cambiarEstilo.bind(this);
         this.cambiarTexto = this.cambiarTexto.bind(this);
-        this.cambiarColorFondo_1 = this.cambiarColorFondo_1.bind(this)
-        this.cambiarColorFondo_2 = this.cambiarColorFondo_2.bind(this)
+        this.handleOver = this.handleOver.bind(this)
+        this.handleOut = this.handleOut.bind(this)
     }
 
     handleClick(event){
@@ -51,7 +51,7 @@ class Contenido extends React.Component {
         }
     }
 
-    cambiarColorFondo_1(event){
+    handleOver(event){
         let numId =event.target.id;
         if(numId==="1"){
             event.target.style.backgroundColor="blue";
@@ -66,7 +66,7 @@ class Contenido extends React.Component {
         }
     }
 
-    cambiarColorFondo_2(event){
+    handleOut(event){
         event.target.style.backgroundColor="white";
     }
 
@@ -74,11 +74,11 @@ class Contenido extends React.Component {
         return (
             <div className='stDiv'>
                 <h1 onClick={this.handleClick}>{this.state.titulo}</h1>                
-                <p id="1" onClick={this.cambiarEstilo} onMouseOver={this.cambiarColorFondo_1} onMouseOut={this.cambiarColorFondo_2}>{this.state.texto1}</p>
-                <p id="2" onClick={this.cambiarTexto} onMouseOver={this.cambiarColorFondo_1} onMouseOut={this.cambiarColorFondo_2}>{this.state.texto2}</p>
-                <p id="3" onClick={this.cambiarTexto} onMouseOver={this.cambiarColorFondo_1} onMouseOut={this.cambiarColorFondo_2}>{this.state.texto3}</p>
-                <p id="4" onClick={this.cambiarTexto} onMouseOver={this.cambiarColorFondo_1} onMouseOut={this.cambiarColorFondo_2}>{this.state.texto4}</p>
-                <p id="5" onClick={this.cambiarTexto} onMouseOver={this.cambiarColorFondo_1} onMouseOut={this.cambiarColorFondo_2}>{this.state.texto5}</p>
+                <p id="1" onClick={this.cambiarEstilo} onMouseOver={this.handleOver} onMouseOut={this.handleOut}>{this.state.texto1}</p>
+                <p id="2" onClick={this.cambiarTexto} onMouseOver={this.handleOver} onMouseOut={this.handleOut}>{this.state.texto2}</p>
+                <p id="3" onClick={this.cambiarTexto} onMouseOver={this.handleOver} onMouseOut={this.handleOut}>{this.state.texto3}</p>
+                <p id="4" onClick={this.cambiarTexto} onMouseOver={this.handleOver} onMouseOut={this.handleOut}>{this.state.texto4}</p>
+                <p id="5" onClick={this.cambiarTexto} onMouseOver={this.handleOver} onMouseOut={this.handleOut}>{this.state.texto5}</p>
             </div>
         );
     }
