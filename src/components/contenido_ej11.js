@@ -13,7 +13,8 @@ class Contenido extends React.Component {
     handleLoad(event){
         event.preventDefault();
         setTimeout(() => {
-            event.target.style.opacity="0.2"
+            event.target.style.opacity="0.2";
+            event.target.style.transition="5s";
         }, 2000);
     }
 
