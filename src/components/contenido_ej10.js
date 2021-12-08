@@ -10,7 +10,7 @@ class Contenido extends React.Component{
             dni: ""
         }
         this.guardarTexto = this.guardarTexto.bind(this);
-        this.confirmarEnvio = this.confirmarEnvio(this);
+        this.confirmarEnvio = this.confirmarEnvio.bind(this);
     }
 
     guardarTexto(event){
@@ -21,13 +21,13 @@ class Contenido extends React.Component{
             this.setState({ dni: texto });
         } else if(event.target.id==="idNombre"){
             isNaN(ultimoCaracter) ? this.setState({ nombre: texto }) : alert("No se admiten números.");
-        } else if(event.target.id==="idApellido"){
+        } else if(event.target.id==="idApellidos"){
             isNaN(ultimoCaracter) ? this.setState({ apellidos: texto }) : alert("No se admiten números.");
         }
-        }
+    }
 
     confirmarEnvio(){
-        alert("nombre: "+this.state.nombre+"\napellidos: "+this.state.apellidos+"\ndni: "+this.state.dni);
+        alert("Datos Enviados\nnombre: "+this.state.nombre+"\napellidos: "+this.state.apellidos+"\ndni: "+this.state.dni);
     }
 
     render(){
