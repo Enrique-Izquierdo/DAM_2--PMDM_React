@@ -1,6 +1,6 @@
 import React from 'react';
 import Cabecera from './cabecera';
-import Contenido from './Ejercicio1';
+import Contenido from './Ejercicio10';
 
 //EJEMPLO STATE.
 

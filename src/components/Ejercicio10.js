@@ -55,36 +55,36 @@ class Contenido extends React.Component {
   
     render() {
       return (
-          <form onSubmit={this.handleSubmit}>
+        <form onSubmit={this.handleSubmit}>
           <table cellSpacing="2" cellPadding="2" border="1">
             <tbody>
-            <tr>
-              <td>
-              <label>Nombre: <input type="text" nombre={this.state.nombre} onChange={this.handleNombre} /></label>
-              </td>
-            </tr>
-            <tr>
-              <td>
-              <label>Primer apellido: <input type="text" primerapellido={this.state.apellido} onChange={this.handlePrimerApellido} /></label>
-              </td>
-            </tr>
-            <tr>
-              <td>
-              <label>Segundo apellido: <input type="text" segundoapellido={this.state.apellido} onChange={this.handleSegundoApellido} /></label>
-              </td>
-            </tr>
-            <tr>
-              <td>
-              <label>DNI: <input type="text" segundoapellido={this.state.apellido} onChange={this.handleDni} /></label>
-              </td>
-            </tr>
-            <tr>
-              <td>
-              <input type="submit" value="Submit" />  
-              </td>
-            </tr>
+              <tr>
+                <td>
+                  <label>Nombre: <input type="text" nombre={this.state.nombre} onChange={this.handleNombre} /></label>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <label>Primer apellido: <input type="text" primerapellido={this.state.apellido} onChange={this.handlePrimerApellido} /></label>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <label>Segundo apellido: <input type="text" segundoapellido={this.state.apellido} onChange={this.handleSegundoApellido} /></label>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <label>DNI: <input type="text" segundoapellido={this.state.apellido} onChange={this.handleDni} /></label>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <input type="submit" value="Submit" />  
+                </td>
+              </tr>
             </tbody>
-            </table>
+          </table>
         </form>
       );
     }
