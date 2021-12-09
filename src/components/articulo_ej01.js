@@ -10,7 +10,7 @@ class Articulo extends React.Component{
 
     componentDidMount(){
         setTimeout(() => {
-            this.setState({ titulo: "Diseñada por Santiago Calatrava"})
+            this.setState({ titulo: "Diseñada por Santiago Calatrava" })
         }, 2000);
     }
 

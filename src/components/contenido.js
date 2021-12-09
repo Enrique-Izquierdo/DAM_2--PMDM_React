@@ -1,5 +1,5 @@
 import React from "react";
-import Articulo from "./articulo_ej01";
+import Articulo from "./articulo_ej02";
 import Menu from "./menu";
 
 class Contenido extends React.Component{
