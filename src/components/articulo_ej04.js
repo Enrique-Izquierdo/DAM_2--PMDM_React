@@ -1,3 +1,11 @@
+// Unidad 3, actividad 6: métodos Ciclo de Vida
+//
+// Ejercicio 4 - Utilizando los métodos de ciclo de vida y timers, implementa la
+// lógica necesaria para que además de lo implementado en el ejercicio anterior,
+// cuando el párrafo esté totalmente escrito, el contenido de éste se cambie por
+// un nuevo párrafo completo.
+
+
 import React from "react";
 
 class Articulo extends React.Component{

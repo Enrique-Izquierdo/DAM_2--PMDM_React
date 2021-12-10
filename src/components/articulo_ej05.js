@@ -1,3 +1,16 @@
+// Unidad 3, actividad 6: métodos Ciclo de Vida
+//
+// Ejercicio 4 - Utilizando los métodos de ciclo de vida y timers, implementa la
+// lógica necesaria para que además de lo implementado en el ejercicio anterior,
+// cuando el párrafo esté totalmente escrito, el contenido de éste se cambie por
+// un nuevo párrafo completo.
+//
+// Ejercicio 5 – Utilizando los métodos de ciclo de vida y timers, implementa la 
+// lógica necesaria para realizar un carrusel de tres imágenes para que se inicie 
+// al cargar elservidor. Cada imagen se pasará pasados dos segundos y al llegar a
+// la tercera finalizará. 
+
+
 import React from "react";
 
 class Articulo extends React.Component{
@@ -10,8 +23,7 @@ class Articulo extends React.Component{
         };
     }
 
-    componentDidMount(){
-        
+    componentDidMount(){        
         //Ejercicio 5
         let fotos = [ "https://www.peruhop.com/wp-content/uploads/cosas-por-hacer-en-peru-andes-huaraz.jpg", "https://www.peruhop.com/wp-content/uploads/cosas-por-hacer-en-peru-selva.jpg"];
 
@@ -45,6 +57,7 @@ class Articulo extends React.Component{
         }, (numCaracteres+5)*100);
     }
 
+    
     render(){
         return (
             <article>

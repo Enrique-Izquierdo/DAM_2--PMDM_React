@@ -1,3 +1,11 @@
+// Unidad 3, actividad 6: métodos Ciclo de Vida
+//
+// Ejercicio 2 – Utilizando los métodos de ciclo de vida, implementa la lógica
+// necesaria para que además de cambiar el contenido del título de primer nivel,
+// pasados los dos segundos, también cambie el contenido del párrafo -sin la 
+// ayuda de eventos-
+
+
 import React from "react";
 
 class Articulo extends React.Component{

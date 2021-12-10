@@ -1,3 +1,15 @@
+// Unidad 3, actividad 6: métodos Ciclo de Vida
+//
+// A partir del archivo html facilitado, crea una interfaz gráfica en React donde
+// tu definas los componentes y los estilos en -archivo index.css-. 
+// Realiza los ejercicios en el componente donde ubiques el “article”:
+//
+// Ejercicio 1 – Utilizando los métodos de ciclo de vida y timers -setTimeout y
+// setInterval- implementa la lógica necesaria para que, al cargarse el servidor,
+// el contenido del título de primer nivel cambie pasados dos segundos -sin ayuda
+// de eventos-.
+
+
 import React from "react";
 
 class Articulo extends React.Component{

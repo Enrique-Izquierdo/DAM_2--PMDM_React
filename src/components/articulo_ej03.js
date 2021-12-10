@@ -1,3 +1,10 @@
+// Unidad 3, actividad 6: métodos Ciclo de Vida
+//
+// Ejercicio 3 – Utilizando los métodos de ciclo de vida y timers, implementa la
+// lógica necesaria para que al cargarse la página el contenido del primer párrafo
+// se escriba de manera prograseiva, a razón de una letra cada 100 milisegundos.
+
+
 import React from "react";
 
 class Articulo extends React.Component{
