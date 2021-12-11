@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import Contenido from './components/contenido_ej05';
+import Contenido from './components/contenido_ej06';
 
 
 ReactDOM.render(
