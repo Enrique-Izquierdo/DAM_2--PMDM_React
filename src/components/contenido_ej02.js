@@ -9,11 +9,11 @@
 import React, { useState } from 'react';
 
 const Contenido = () => {
-    const [texto, setTexto] = useState("Buenas");
+    const [texto, setTexto] = useState("Preparados");
 
     return(
         <div>
-            <p onMouseOver={() => setTexto("Hola")} onMouseOut={() => setTexto("Adios")}>{texto}</p>
+            <p onMouseOver={() => setTexto("Listos")} onMouseOut={() => setTexto("Ya")}>{texto}</p>
         </div>
     );
 };
