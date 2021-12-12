@@ -14,7 +14,8 @@
 import React, {useState} from 'react';
 
 const Contenido = () => {
-    //let i = 0;
+    // let i = 0;
+    // const [num, setNum] = useState(i);
     let [num, setNum] = useState(0);
     const fotos = ["https://www.preferente.com/wp-content/uploads/2020/03/Peru-Machupichu.jpg", "https://www.peruhop.com/wp-content/uploads/cosas-por-hacer-en-peru-andes-huaraz.jpg", "https://www.peruhop.com/wp-content/uploads/cosas-por-hacer-en-peru-selva.jpg"];
     
@@ -26,13 +27,15 @@ const Contenido = () => {
             <img src={fotos.at(num)} alt="" width="75%"/>
             <h1>{num}</h1>
             <button onClick={ () => setNum(num>-1 ? num-- : num=fotos.length-1) }>Anterior</button>
-            <button onClick={ () => setNum(num<fotos.length ? num++ : num=0) }>Siguiente</button><br/><br/><br/>
+            <button onClick={ () => setNum(num<fotos.length ? num++ : num=0) }>Siguiente</button>
             {/* <button onClick={ () => setNum(num>0 ? num-- : num=fotos.length-1) }>Anterior</button> */}
             {/* <button onClick={ () => setNum(num<fotos.length-1 ? num++ : num=0) }>Siguiente</button> */}
+            <br/><br/><br/>
+
             <p>En este caso, "onClick" solo requiere un click.</p>
             <img src={imagen} alt="" width="75%"/><br/>
             <button onClick={ () => setImagen(fotos.at(0)) }>Anterior B</button>
-            <button onClick={ () => setImagen(fotos.at(1))}>Siguiente B</button>
+            <button onClick={ () => setImagen(fotos.at(1)) }>Siguiente B</button>
         </div>
     );
 }
